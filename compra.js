@@ -32,7 +32,7 @@ for (let i = 1; i <= manzanasNecesarias; i++) {
 } */
 
 
-const readline = require('readline/promises');
+/* const readline = require('readline/promises');
 const { stdin: input, stdout: output } = require('process');
 
 async function iniciarCompra() {
@@ -73,4 +73,17 @@ async function iniciarCompra() {
 }
 
 // Ejecutamos la función
-iniciarCompra();
+iniciarCompra(); */
+
+let control = 0;
+
+while (true) { // Condición siempre verdadera -> Ciclo infinito
+    console.log("Hola desde el ciclo infinito de verdad");
+    
+    control = control + 1;
+    
+    if (control === 5) {
+        console.log("¡Saliendo del ciclo con break!");
+        break; // Rompemos el ciclo para que no se congele la terminal
+    }
+}
